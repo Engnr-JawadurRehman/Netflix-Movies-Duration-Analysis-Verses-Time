@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 # Our main focus will be to find out that is the netflix movie's duration is getting shorter with respect to time
 # Providing the path to the data and reading it
-netflix_data = pd.read_csv("netflix_data.csv", index_col=0)
+netflix_data = pd.read_csv("https://github.com/RemembermeJawad/Netflix-Movies-Duration-Analysis-Verses-Time/blob/main/netflix_data.csv", index_col=0)
 # Subsetting the netflix_data for type movie and selecting only column of interest
 netflix_data_movies_only = netflix_data[netflix_data["type"] == "Movie"]
 netflix_movies_col_subset = netflix_data_movies_only[['title', 'country', 'genre', "release_year", "duration"]]
